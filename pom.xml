@@ -1,10 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
-  <groupId>githubActions </groupId>
+  <groupId>githubActions</groupId>
   <artifactId>githubActions</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
   <dependencies>
-   <!-- Selenium WebDriver -->
+    <!-- Selenium WebDriver -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
@@ -24,15 +28,16 @@
       <version>5.9.3</version>
       <scope>test</scope>
     </dependency>
-    
-  <!-- Add this inside your existing <dependencies> tag -->
-  <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.7.1</version> <!-- Use latest stable -->
-    <scope>test</scope>
-  </dependency>
-</dependencies>
+
+    <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.7.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
   <build>
     <plugins>
       <!-- JUnit Platform for Maven -->
@@ -43,4 +48,5 @@
       </plugin>
     </plugins>
   </build>
+
 </project>
