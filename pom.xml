@@ -33,9 +33,6 @@
     <scope>test</scope>
   </dependency>
 </dependencies>
-
-  </dependencies>
-
   <build>
     <plugins>
       <!-- JUnit Platform for Maven -->
